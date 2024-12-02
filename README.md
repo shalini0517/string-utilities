@@ -4,7 +4,7 @@
 **StringUtils** is a Ruby gem that provides additional string manipulation utilities to make working with strings easier and more convenient. It includes methods for converting strings between different cases, reversing words, and more.
 
 Author
-Developed by [Shobhit Jain](https://github.com/shalini0517).
+Developed by [Shalini Patel](https://github.com/shalini0517).
 
 
 ## Installation
