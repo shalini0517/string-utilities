@@ -3,7 +3,7 @@
 require_relative "lib/string_utils/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "string_utils"
+  spec.name = "string_utilities"
   spec.version = StringUtils::VERSION
   spec.authors = ["shalini0517"]
   spec.email = ["shalinipatel1702@gmail.com"]
