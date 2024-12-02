@@ -9,7 +9,8 @@ Gem::Specification.new do |spec|
   spec.email = ["shalinipatel1702@gmail.com"]
 
   spec.summary       = "A Ruby gem for additional string manipulation utilities."
-  spec.description   = "Provides methods like camelCase conversion, kebab-case conversion, title casing, and reversing words."
+  spec.description   = "Provides methods like camelCase conversion,
+  kebab-case conversion, title casing, and reversing words."
   spec.homepage = "https://github.com/shalini0517/string-utils"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.0.0"
