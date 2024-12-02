@@ -1,43 +1,123 @@
+
 # StringUtils
 
-TODO: Delete this and the text below, and describe your gem
+**StringUtils** is a Ruby gem that provides additional string manipulation utilities to make working with strings easier and more convenient. It includes methods for converting strings between different cases, reversing words, and more.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/string_utils`. To experiment with that code, run `bin/console` for an interactive prompt.
+Author
+Developed by [Shobhit Jain](https://github.com/shalini0517).
+
 
 ## Installation
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
+Add this line to your application's Gemfile:
 
-Install the gem and add to the application's Gemfile by executing:
-
-```bash
-bundle add UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+```ruby
+gem 'string_utils'
 ```
 
-If bundler is not being used to manage dependencies, install the gem by executing:
+And then execute:
 
 ```bash
-gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+bundle install
 ```
+
+Or install it yourself as:
+
+```bash
+gem install string_utils
+```
+
+---
 
 ## Usage
 
-TODO: Write usage instructions here
+Require the gem in your Ruby application:
+
+```ruby
+require 'string_utils'
+```
+
+### Available Methods
+
+#### 1. `to_camel_case`
+Converts a snake_case or kebab-case string into camelCase.
+
+```ruby
+StringUtils.to_camel_case("hello_world") # => "helloWorld"
+```
+
+#### 2. `to_kebab_case`
+Converts a snake_case string into kebab-case.
+
+```ruby
+StringUtils.to_kebab_case("hello_world") # => "hello-world"
+```
+
+#### 3. `to_snake_case`
+Converts a string to snake_case, regardless of its original format.
+
+```ruby
+StringUtils.to_snake_case("HelloWorld")  # => "hello_world"
+StringUtils.to_snake_case("hello-world") # => "hello_world"
+```
+
+#### 4. `title_case`
+Capitalizes the first letter of each word while keeping certain words lowercase (like "and", "or", etc.).
+
+```ruby
+StringUtils.title_case("the quick brown fox jumps over") # => "The Quick Brown Fox Jumps Over"
+```
+
+#### 5. `reverse_words`
+Reverses the order of words in a sentence without reversing the characters in each word.
+
+```ruby
+StringUtils.reverse_words("The quick brown fox") # => "fox brown quick The"
+```
+
+---
+
+## Example Usage
+
+```ruby
+require 'string_utils'
+
+puts StringUtils.to_camel_case("my_example_string")  # => "myExampleString"
+puts StringUtils.to_kebab_case("my_example_string")  # => "my-example-string"
+puts StringUtils.to_snake_case("MyExampleString")    # => "my_example_string"
+puts StringUtils.title_case("a tale of two cities")  # => "A Tale of Two Cities"
+puts StringUtils.reverse_words("Hello World!")       # => "World! Hello"
+```
+
+---
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+After checking out the repository, run `bin/setup` to install dependencies. Then, run the tests with:
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```bash
+bundle exec rspec
+```
+
+To install the gem locally:
+
+```bash
+gem build string_utils.gemspec
+gem install ./string_utils-0.1.0.gem
+```
+
+---
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/string_utils. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/string_utils/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at [https://github.com/shalini0517/string-utils](https://github.com/shalini0517/string-utils).
+
+---
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+This gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Code of Conduct
 
-Everyone interacting in the StringUtils project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/string_utils/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the CurrencyConverter project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/shalini0517/string-utils/blob/master/CODE_OF_CONDUCT.md).
