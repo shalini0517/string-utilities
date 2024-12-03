@@ -12,7 +12,7 @@ Developed by [Shalini Patel](https://github.com/shalini0517).
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'string_utils'
+gem 'string_utilities'
 ```
 
 And then execute:
@@ -24,7 +24,7 @@ bundle install
 Or install it yourself as:
 
 ```bash
-gem install string_utils
+gem install string_utilities
 ```
 
 ---
@@ -34,7 +34,7 @@ gem install string_utils
 Require the gem in your Ruby application:
 
 ```ruby
-require 'string_utils'
+require 'string_utilities'
 ```
 
 ### Available Methods
