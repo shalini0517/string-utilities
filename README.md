@@ -103,7 +103,7 @@ To install the gem locally:
 
 ```bash
 gem build string_utils.gemspec
-gem install ./string_utils-0.1.0.gem
+gem install ./string_utilities-0.1.1.gem
 ```
 
 ---
