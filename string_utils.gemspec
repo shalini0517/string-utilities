@@ -19,6 +19,7 @@ Gem::Specification.new do |spec|
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/shalini0517/string-utils"
   spec.metadata["changelog_uri"] = "https://github.com/shalini0517/string-utils/blob/master/CHANGELOG.md"
+  spec.metadata["documentation_uri"] = "https://github.com/shalini0517/string-utils#readme"
 
   # Specify which files should be added to the gem when it is released
   # Exclude `.gem` and unnecessary files
